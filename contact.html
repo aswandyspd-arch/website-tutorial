@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak - CodeAI Academy</title>
+  <meta name="description" content="Kontak CodeAI Academy untuk pertanyaan, kerja sama, dan diskusi belajar teknologi.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">📘 CodeAI Academy</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tutorial.html">Tutorial</a></li>
+          <li><a href="about.html">Tentang</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+        <button class="menu-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Hubungi Kami</h1>
+      <p class="lead">Ada pertanyaan, ide, atau kebutuhan kolaborasi? Kirim pesan dan kami akan membalas dengan cepat.</p>
+    </div>
+  </section>
+
+  <main class="page-shell container">
+    <div class="contact-grid">
+      <section class="contact-card">
+        <h2>Formulir Kontak</h2>
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Pesan Anda telah terkirim. Terima kasih!')">
+          <input type="text" placeholder="Nama lengkap" required>
+          <input type="email" placeholder="Email" required>
+          <input type="text" placeholder="Subjek">
+          <textarea rows="5" placeholder="Tuliskan pesan Anda..." required></textarea>
+          <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+        </form>
+      </section>
+
+      <aside class="contact-card">
+        <div class="icon">📍</div>
+        <h3>Informasi</h3>
+        <ul class="contact-list">
+          <li>Email: hello@codeaiacademy.id</li>
+          <li>WhatsApp: +62 812-3456-7890</li>
+          <li>Instagram: @codeaiacademy</li>
+          <li>Lokasi: Indonesia</li>
+        </ul>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 CodeAI Academy. Dibuat dengan ❤️ untuk pelajar Indonesia.</p>
+      <div class="socials">
+        <a href="#">Instagram</a> · <a href="#">YouTube</a> · <a href="#">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

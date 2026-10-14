@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar HTML untuk Pemula - CodeAI Academy</title>
+  <meta name="description" content="Panduan lengkap belajar HTML dari nol untuk pemula.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/article.css">
+  <!-- Prism.js untuk syntax highlighting -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css">
+</head>
+<body>
+
+  <!-- NAVBAR (sama seperti index) -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">📘 CodeAI Academy</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tutorial.html">Tutorial</a></li>
+          <li><a href="about.html">Tentang</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+        <button class="menu-toggle" aria-label="Menu">☰</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- BREADCRUMB -->
+  <div class="container">
+    <nav class="breadcrumb">
+      <a href="index.html">Home</a> / 
+      <a href="tutorial.html">Tutorial</a> / 
+      <span>Belajar HTML untuk Pemula</span>
+    </nav>
+  </div>
+
+  <!-- KONTEN ARTIKEL -->
+  <main class="container article-layout">
+
+    <!-- KONTEN UTAMA -->
+    <article class="article-main">
+      <header class="article-header">
+        <span class="badge">Coding</span>
+        <h1>Belajar HTML untuk Pemula: Panduan Lengkap 2025</h1>
+        <div class="article-meta">
+          <img src="assets/images/avatar.svg" alt="Author" class="avatar">
+          <div>
+            <span class="author">Pak Lee</span>
+            <span class="dot">·</span>
+            <span class="date">15 Januari 2025</span>
+            <span class="dot">·</span>
+            <span class="read-time">⏱ 8 menit baca</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- THUMBNAIL -->
+      <img src="assets/images/html-cover.svg" 
+           alt="Belajar HTML" 
+           class="article-thumbnail">
+
+      <!-- DAFTAR ISI (auto-generate) -->
+      <aside class="toc">
+        <h3>📑 Daftar Isi</h3>
+        <ul id="toc-list"></ul>
+      </aside>
+
+      <!-- ISI ARTIKEL -->
+      <div class="article-content" id="article-content">
+
+        <h2>Apa itu HTML?</h2>
+        <p>
+          <strong>HTML (HyperText Markup Language)</strong> adalah bahasa markup standar 
+          yang digunakan untuk membuat struktur halaman web. Setiap website yang Anda 
+          kunjungi—dari Google, YouTube, hingga Instagram—dibangun di atas HTML.
+        </p>
+        <p>
+          Bayangkan HTML seperti <em>kerangka</em> rumah. CSS adalah cat dan dekorasinya, 
+          sedangkan JavaScript adalah listrik dan pipa air yang membuat rumah "hidup".
+        </p>
+
+        <h2>Struktur Dasar HTML</h2>
+        <p>Setiap halaman HTML memiliki struktur dasar seperti berikut:</p>
+
+        <div class="code-block">
+          <div class="code-header">
+            <span class="code-lang">HTML</span>
+            <button class="copy-btn" onclick="copyCode(this)">📋 Copy</button>
+          </div>
+          <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="id"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;Halaman Pertamaku&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Hello, World!&lt;/h1&gt;
+  &lt;p&gt;Ini paragraf pertama saya.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </div>
+
+        <h3>Penjelasan Setiap Tag</h3>
+        <ul>
+          <li><code>&lt;!DOCTYPE html&gt;</code> — memberi tahu browser ini HTML5</li>
+          <li><code>&lt;html&gt;</code> — elemen root halaman</li>
+          <li><code>&lt;head&gt;</code> — metadata (judul, charset, CSS)</li>
+          <li><code>&lt;body&gt;</code> — konten yang tampil di layar</li>
+        </ul>
+
+        <h2>Tag HTML yang Sering Digunakan</h2>
+        <p>Berikut tag dasar yang wajib Anda kuasai:</p>
+
+        <table class="article-table">
+          <thead>
+            <tr><th>Tag</th><th>Fungsi</th><th>Contoh</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>&lt;h1&gt;-&lt;h6&gt;</code></td><td>Heading/judul</td><td>H1 paling besar</td></tr>
+            <tr><td><code>&lt;p&gt;</code></td><td>Paragraf</td><td>Teks biasa</td></tr>
+            <tr><td><code>&lt;a&gt;</code></td><td>Link</td><td>Klik di sini</td></tr>
+            <tr><td><code>&lt;img&gt;</code></td><td>Gambar</td><td>Foto</td></tr>
+            <tr><td><code>&lt;ul&gt;/&lt;ol&gt;</code></td><td>List</td><td>Bullet/numbering</td></tr>
+          </tbody>
+        </table>
+
+        <h2>Membuat Link dan Gambar</h2>
+        <p>Contoh membuat link ke Google dan menampilkan gambar:</p>
+
+        <div class="code-block">
+          <div class="code-header">
+            <span class="code-lang">HTML</span>
+            <button class="copy-btn" onclick="copyCode(this)">📋 Copy</button>
+          </div>
+          <pre><code class="language-html">&lt;a href="https://google.com" target="_blank"&gt;
+  Kunjungi Google
+&lt;/a&gt;
+
+&lt;img src="foto.jpg" alt="Foto saya" width="300"&gt;</code></pre>
+        </div>
+
+        <div class="callout callout-info">
+          💡 <strong>Tips:</strong> Selalu isi atribut <code>alt</code> pada gambar 
+          untuk aksesibilitas dan SEO.
+        </div>
+
+        <h2>Contoh: Halaman Profil Sederhana</h2>
+        <p>Mari gabungkan semua yang telah kita pelajari:</p>
+
+        <div class="code-block">
+          <div class="code-header">
+            <span class="code-lang">HTML</span>
+            <button class="copy-btn" onclick="copyCode(this)">📋 Copy</button>
+          </div>
+          <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="id"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;Profil Saya&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Halo, saya Budi!&lt;/h1&gt;
+  &lt;img src="budi.jpg" alt="Foto Budi" width="200"&gt;
+  &lt;p&gt;Saya seorang pelajar yang sedang belajar coding.&lt;/p&gt;
+  &lt;h2&gt;Hobi Saya&lt;/h2&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Membaca buku&lt;/li&gt;
+    &lt;li&gt;Ngoding&lt;/li&gt;
+    &lt;li&gt;Bermain game&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;a href="mailto:budi@email.com"&gt;Hubungi Saya&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </div>
+
+        <div class="callout callout-warning">
+          ⚠️ <strong>Perhatian:</strong> Jangan lupa menutup setiap tag! 
+          Tag yang tidak ditutup bisa menyebabkan tampilan berantakan.
+        </div>
+
+        <h2>Langkah Selanjutnya</h2>
+        <p>Setelah menguasai HTML, Anda siap mempelajari:</p>
+        <ol>
+          <li><strong>CSS</strong> — mempercantik tampilan</li>
+          <li><strong>JavaScript</strong> — membuat halaman interaktif</li>
+          <li><strong>Git & GitHub</strong> — menyimpan kode online</li>
+        </ol>
+
+        <div class="callout callout-success">
+          🎉 <strong>Selamat!</strong> Anda telah menyelesaikan tutorial HTML dasar. 
+          Coba buat halaman profil Anda sendiri dan share hasilnya!
+        </div>
+
+      </div>
+      <!-- /article-content -->
+
+      <!-- TAGS -->
+      <div class="article-tags">
+        <span class="tag">#html</span>
+        <span class="tag">#pemula</span>
+        <span class="tag">#web-development</span>
+        <span class="tag">#coding</span>
+      </div>
+
+      <!-- SHARE -->
+      <div class="article-share">
+        <strong>Bagikan:</strong>
+        <a href="#" class="share-btn twitter">Twitter</a>
+        <a href="#" class="share-btn facebook">Facebook</a>
+        <a href="#" class="share-btn whatsapp">WhatsApp</a>
+        <a href="#" class="share-btn link" onclick="copyLink()">🔗 Copy Link</a>
+      </div>
+
+      <!-- NAVIGASI PREV/NEXT -->
+      <nav class="article-nav">
+        <a href="#" class="nav-prev">
+          <span class="nav-label">← Sebelumnya</span>
+          <span class="nav-title">Pengenalan Dunia Coding</span>
+        </a>
+        <a href="#" class="nav-next">
+          <span class="nav-label">Selanjutnya →</span>
+          <span class="nav-title">Belajar CSS untuk Pemula</span>
+        </a>
+      </nav>
+
+      <!-- ARTIKEL TERKAIT -->
+      <section class="related-articles">
+        <h3>📚 Artikel Terkait</h3>
+        <div class="grid-3">
+          <article class="card article-card">
+            <span class="badge">Web</span>
+            <h4>Belajar CSS Dasar</h4>
+            <a href="#" class="read-more">Baca →</a>
+          </article>
+          <article class="card article-card">
+            <span class="badge">Coding</span>
+            <h4>JavaScript untuk Pemula</h4>
+            <a href="#" class="read-more">Baca →</a>
+          </article>
+          <article class="card article-card">
+            <span class="badge">Web</span>
+            <h4>Deploy Website ke Internet</h4>
+            <a href="#" class="read-more">Baca →</a>
+          </article>
+        </div>
+      </section>
+
+    </article>
+
+    <!-- SIDEBAR -->
+    <aside class="article-sidebar">
+      <div class="sidebar-widget">
+        <h4>🔥 Populer</h4>
+        <ul class="popular-list">
+          <li><a href="#">Belajar HTML untuk Pemula</a></li>
+          <li><a href="#">Membuat Chatbot dengan Python</a></li>
+          <li><a href="#">Deploy Website Gratis</a></li>
+          <li><a href="#">Dasar Machine Learning</a></li>
+          <li><a href="#">Git & GitHub untuk Pemula</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-widget">
+        <h4>📂 Kategori</h4>
+        <ul class="category-list">
+          <li><a href="#">💻 Coding <span>24</span></a></li>
+          <li><a href="#">🌐 Web <span>18</span></a></li>
+          <li><a href="#">🤖 AI <span>12</span></a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-widget newsletter-widget">
+        <h4>📬 Newsletter</h4>
+        <p>Dapatkan tutorial baru via email.</p>
+        <form onsubmit="event.preventDefault(); alert('Terima kasih sudah subscribe!');">
+          <input type="email" placeholder="email@anda.com" required>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </aside>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>© 2025 CodeAI Academy. Dibuat dengan ❤️ untuk pelajar Indonesia.</p>
+      <div class="socials">
+        <a href="#">Instagram</a> · <a href="#">YouTube</a> · <a href="#">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Prism.js -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-html.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-javascript.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-python.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/article.js"></script>
+</body>
+</html>

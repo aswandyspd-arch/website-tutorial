@@ -1,0 +1,30 @@
+---
+title: "Belajar HTML untuk Pemula: Panduan Lengkap 2025"
+description: "Panduan lengkap belajar HTML dari nol untuk pemula."
+category: "coding"
+date: "2025-01-15"
+author: "Ahmad Developer"
+tags: ["html", "pemula", "web-development"]
+---
+
+## Apa itu HTML?
+
+**HTML (HyperText Markup Language)** adalah bahasa markup standar
+untuk membuat struktur halaman web.
+
+## Struktur Dasar HTML
+
+Setiap halaman HTML memiliki struktur dasar seperti ini:
+
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Halaman Pertamaku</title>
+</head>
+<body>
+  <h1>Hello, World!</h1>
+  <p>Ini paragraf pertama saya.</p>
+</body>
+</html>

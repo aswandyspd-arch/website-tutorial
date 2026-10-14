@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-slate-50;
+  }
+}
+
+/* Prism.js Code Highlight */
+pre[class*="language-"] {
+  @apply bg-slate-900 rounded-lg p-5 overflow-x-auto text-sm;
+}
+code[class*="language-"] {
+  @apply font-mono text-slate-100;
+}
+.token.comment { @apply text-slate-500 italic; }
+.token.keyword { @apply text-pink-400; }
+.token.string { @apply text-green-400; }
+.token.function { @apply text-blue-400; }
+.token.number { @apply text-orange-400; }
+.token.tag { @apply text-red-400; }
+.token.attr-name { @apply text-yellow-400; }
+.token.attr-value { @apply text-green-400; }
+.token.punctuation { @apply text-slate-400; }
